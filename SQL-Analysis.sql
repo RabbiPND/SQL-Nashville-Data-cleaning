@@ -43,4 +43,12 @@ ORDER BY SaleYear;
 
 
 
+SELECT *
+FROM Portfolio.dbo.NashvilleHousing_Analysis
 
+SELECT PropertyCity, 
+		COUNT(Bedrooms) AS "Total Number Of Bedroom",
+		COUNT(FullBath) AS "Total Number Of FullBath",
+		COUNT(HalfBath) AS "Total Number Of HalfBath"
+FROM Portfolio.dbo.NashvilleHousing_Analysis
+GROUP BY PropertyCity
