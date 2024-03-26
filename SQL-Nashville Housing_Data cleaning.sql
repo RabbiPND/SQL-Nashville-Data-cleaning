@@ -129,9 +129,13 @@ FROM Portfolio.dbo.Nashville_Housing
 
 
 
+----Delete Columns Copies
 
+ALTER TABLE Portfolio.dbo.Nashville_Housing
+DROP COLUMN PropertyAddress, OwnerAddress, SaleDate, SoldAsVacant
 
-
+SELECT *
+FROM Portfolio.dbo.Nashville_Housing
 
 
 
@@ -171,13 +175,5 @@ FROM Portfolio.dbo.Nashville_Housing
 
 ----SELECT (DELETE)
 
-
-
-----DELETE UNUSED COLUMNS(USED IN VIEWS NOT RAW DATA)
--- select *
--- from Portfolio.dbo.Nashville_Housing
-
--- ALTER TABLE Portfolio.dbo.Nashville_Housing
--- DROP COLUMN OwnerAddress, PropertyAddress, TaxDistrct
 
 
