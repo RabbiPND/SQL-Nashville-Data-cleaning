@@ -137,43 +137,77 @@ DROP COLUMN PropertyAddress, OwnerAddress, SaleDate, SoldAsVacant
 SELECT *
 FROM Portfolio.dbo.Nashville_Housing
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 --------Remove Duplicated
---WITH RowNumCTE AS (
---SELECT *, 
---		ROW_NUMBER() OVER (
---		PARTITION BY ParcelID,
---					PropertyAddress,
---					SalePrice,
---					SaleDate,
---					LegalReference
---					ORDER BY 
---						UniqueID
---						) row_num
---FROM Portfolio.dbo.Nashville_Housing
---)
---SELECT *
---FROM RowNumCTE
---WHERE row_num > 1
---ORDER BY PropertyAddress
+WITH RowNumCTE AS (
+SELECT *, 
+		ROW_NUMBER() OVER (
+		PARTITION BY ParcelID,
+					PropertyAddress,
+					SalePrice,
+					SaleDate,
+					LegalReference
+					ORDER BY 
+						UniqueID
+						) row_num
+FROM Portfolio.dbo.Nashville_Housing
+)
+SELECT *
+FROM RowNumCTE
+WHERE row_num > 1
+ORDER BY PropertyAddress
 
 ----SELECT (DELETE)
+
+------------------------------------------------------------------------------------------------------------------------------------
+
+/*
+General queries
+*/
+
+SELECT *
+FROM Portfolio.dbo.Nashville_Housing
+
+SELECT YEAR(Sale_Date) AS "Sale Year",
+       SUM(SalePrice) AS "Total Sales"
+FROM Portfolio.dbo.Nashville_Housing
+GROUP BY YEAR(Sale_Date)
+ORDER BY "Sale Year";
+
+
+
+SELECT City, ROUND(AVG(SalePrice),2) AS "Average Sale Price"
+FROM Portfolio.dbo.Nashville_Housing
+WHERE City <> 'UNKNOWN'
+GROUP BY City
+ORDER BY "Average Sale Price"
+
+
+
+SELECT LandUse, COUNT(SalePrice) AS "Count Of Different LandUse"
+FROM Portfolio.dbo.Nashville_Housing
+GROUP BY LandUse
+ORDER BY "Count Of Different LandUse"
+
+
+
+SELECT YEAR(Sale_Date) AS "Sale Year",
+		MAX(SalePrice) AS "Maximum Sale",
+		MIN(SalePrice) AS "Minimum Sale"
+FROM Portfolio.dbo.Nashville_Housing
+GROUP BY YEAR(Sale_Date)
+ORDER BY "Sale Year"
+
+
+
+SELECT City, 
+		COUNT(Bedrooms) AS "Total Number Of Bedroom",
+		COUNT(FullBath) AS "Total Number Of FullBath",
+		COUNT(HalfBath) AS "Total Number Of HalfBath"
+FROM Portfolio.dbo.Nashville_Housing
+GROUP BY City
+ORDER BY City
+
+
 
 
 
