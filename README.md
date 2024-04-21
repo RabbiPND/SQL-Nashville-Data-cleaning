@@ -30,5 +30,6 @@ In my Tableau dashboard, I've meticulously crafted a suite of visualizations to 
 Interactive Filters: To enhance usability, the dashboard features interactive filters for half bath, bedrooms, full bath, and acreage. These filters empower users to customize their analysis based on specific criteria of interest, ensuring they extract actionable insights tailored to their needs.
 
 Conclusion
+
 In conclusion, through a comprehensive approach encompassing data exploration, cleaning, analysis, and visualization, we've uncovered actionable insights to guide decision-making effectively. Our meticulous process has revealed trends, patterns, and outliers within the dataset, enabling us to address key questions and provide strategic recommendations. The Tableau dashboard serves as a powerful tool for distilling complex information into clear, interactive visualizations, empowering stakeholders to make informed decisions tailored to their specific criteria of interest. Moving forward, these insights will pave the way for optimizing performance, identifying areas for improvement, and seizing new opportunities in the dynamic real estate landscape.
 
