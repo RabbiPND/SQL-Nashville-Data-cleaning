@@ -4,8 +4,8 @@
 The initial dataset presented a challenge in extracting actionable insights for decision-making purposes. To address this challenge, I structured an approach which included: data exploration, cleaning, analysis, and visualizations. Therefore, the primary objective was to uncover trends, patterns, and outliers within the dataset to aid decision-makers in assessing performance and identifying areas for improvement.
 But before that, I did some data operations to help me to analyse it accurately:
 
-      1.  Exploration and Understanding: I explored the dataset in order to gain insights into its structure, variables, and potential relationships. This involved examining data distributions, identifying                   missing values, and understanding the range of values for each variable.
-      2.  Data Cleaning: SQL queries were employed to clean the dataset, ensuring consistency, accuracy, and completeness of the data. This step involved handling missing values, removing duplicates, and                     standardizing formats to facilitate further analysis.
+      1.  Exploration and Understanding: I explored the dataset in order to gain insights into its structure, variables, and potential relationships. This involved examining data distributions, identifying missing values, and understanding the range of values for each variable.
+      2.  Data Cleaning: SQL queries were employed to clean the dataset, ensuring consistency, accuracy, and completeness of the data. This step involved handling missing values, removing duplicates, and standardizing formats to facilitate further analysis.
       3.  General SQL Queries: Additional SQL queries were executed to perform random calculations.
       4.  Data Export to Excel: The cleaned dataset was exported to Excel, for preparation visualization in Tableau.
       5.  Integration with Tableau: The Excel dataset was connected to Tableau for visualization purposes, enabling the creation of interactive and insightful visual representations of the data.
