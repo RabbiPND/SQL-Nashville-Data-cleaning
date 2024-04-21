@@ -2,7 +2,7 @@
 
 
 
-                                  The Report
+                                  Report
 The initial dataset presented a challenge in extracting actionable insights for decision-making purposes. To address this challenge, I structured an approach which included: data exploration, cleaning, analysis, and visualizations. Therefore, the primary objective was to uncover trends, patterns, and outliers within the dataset to aid decision-makers in assessing performance and identifying areas for improvement.
 But before that, I did some data operations to help me to analyse it accurately:
 
