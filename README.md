@@ -11,6 +11,7 @@ But before that, I did some data operations to help me to analyse it accurately:
       5.  Integration with Tableau: The Excel dataset was connected to Tableau for visualization purposes, enabling the creation of interactive and insightful visual representations of the data.
 
 Based on the initial exploration and understanding of the dataset, the following key questions were formulated to guide the analysis:
+
       1.  Yearly Total Sales Price Trends: Investigate the evolution of total sales price over the years and identify any significant patterns or trends. Explore potential outliers and their underlying causes.
       2.  Average Sale Price Comparison Across Different Cities: Compare average sale prices across various cities to assess spatial variations. Analyse changes in average sale prices over time within each city.
       3.  Average Building Value Across Different Cities: Identify cities where building values significantly deviate from the average. Examine trends in average building values across different cities over time.
@@ -19,6 +20,7 @@ Based on the initial exploration and understanding of the dataset, the following
 
 Visualization
 In my Tableau dashboard, I've meticulously crafted a suite of visualizations to distil and communicate key insights from our analysis:
+
       1.	Total Sales per Year: This bar graph offers a quick overview of annual sales volume, facilitating trend analysis and forecasting.
       2.	Property Value Heatmap: This visualization provides a bird's eye view of property value dynamics over time, aiding in spotting market trends.
       3.	Land Value Distribution: This bar graph categorizes land values, offering insights into the diversity of land prices for strategic decision-making.
